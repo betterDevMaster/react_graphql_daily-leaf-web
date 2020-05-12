@@ -1,0 +1,150 @@
+#server {
+#    listen 80 default_server;
+#    listen [::]:80 default_server;
+#    server_name staging.dailyleafdeals.com;
+#    return 301 https://$server_name$request_uri;
+#}
+
+
+
+server {
+    #listen 80;
+    #listen 443;
+    listen 80;
+    server_name dailyleafdeals.com;
+
+    root /var/www/html;
+
+#    ssl        off;
+    ssl_certificate /etc/nginx/certs/cert.crt;
+    ssl_certificate_key /etc/nginx/certs/server.key;
+
+    location / {
+        index index.html index.php;
+        try_files $uri $uri/ /index.php$is_args$args;
+   }
+   location /? {
+        index index.php
+        try_files $uri $uri/ /index.php$is_args$args;
+   }
+   location /deals {
+        include snippets/app.conf;
+   }
+
+   location /deal {
+        include snippets/app.conf;
+   }
+
+   location /dispensary {
+        include snippets/app.conf;
+   }
+   location /brands {
+        include snippets/app.conf;
+   }
+
+   location /brand {
+        include snippets/app.conf;
+   }
+   location /press {
+          include snippets/app.conf;
+   }
+   location /admin {
+        include snippets/app.conf;
+   }
+   location /faqs {
+        include snippets/app.conf;
+   }
+   location /contact {
+        include snippets/app.conf;
+   }
+   location /profile {
+        include snippets/app.conf;
+   }
+   location /terms {
+        include snippets/app.conf;
+   }
+   location /rel {
+        return 302 http://dailyleafdeals.com/brands/rel;
+   }
+   location /marley-natural {
+        return 302 http://dailyleafdeals.com/brands/marley-natural;
+   }
+   location /urban-pharms {
+        return 302 http://dailyleafdeals.com/brands/urban-pharms;
+   }
+
+   location /truly-pure {
+        return 302 http://dailyleafdeals.com/brands/truly-pure;
+   }
+
+   location /select-oil {
+        return 302 http://dailyleafdeals.com/brands/select-oil;
+   }
+
+   location /planted-supply {
+        return 302 http://dailyleafdeals.com/brands/planted-supply;
+   }
+
+   location /pistil-point {
+        return 302 http://dailyleafdeals.com/brands/pistil-point;
+   }
+
+   location /eco-firma-farms {
+        return 302 http://dailyleafdeals.com/brands/eco-firma-farms;
+   }
+
+   location /chalice {
+        return 302 http://dailyleafdeals.com/brands/chalice;
+   }
+
+   location /golden-xtrx {
+        return 302 http://dailyleafdeals.com/brands/golden-xtrx;
+   }
+
+   location /high-desert-pure {
+        return 302 http://dailyleafdeals.com/brands/high-desert-pure;
+   }
+
+   location /novik-industries {
+        return 302 http://dailyleafdeals.com/brands/novik-industries;
+   }
+   location /re-stash {
+        return 302 http://dailyleafdeals.com/brands/re-stash;
+   }
+   location /pdx-organics {
+        return 302 http://dailyleafdeals.com/brands/pdx-organics;
+   }
+   location /open-vape {
+        return 302 http://dailyleafdeals.com/brands/open-vape;
+   }
+   location /nightingale-remedies {
+        return 302 http://dailyleafdeals.com/brands/nightingale-remedies;
+   }
+   location /avitas-cannabis {
+        return 302 http://dailyleafdeals.com/brands/avitas-cannabis;
+   }
+   location /trout {
+        return 302 http://dailyleafdeals.com/brands/trout;
+   }
+   location /grace-notes {
+        return 302 http://dailyleafdeals.com/brands/grace-notes;
+   }
+   location /the-quarry {
+        return 302 http://dailyleafdeals.com/brands/the-quarry;
+   }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+    }
+
+    location = /favicon.ico { log_not_found off; access_log off; }
+    location = /robots.txt { log_not_found off; access_log off; allow all; }
+    location ~* \.(css|gif|ico|jpeg|jpg|js|png)$ {
+        expires max;
+        log_not_found off;
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}

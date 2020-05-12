@@ -1,0 +1,90 @@
+.home-header {
+  min-height: 60vh;
+}
+
+.home-title {
+  margin-top: 30px;
+  font-size: 2em;
+	font-weight: 900;
+	line-height: 0.94;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-subtitle {
+	font-size: 14px;
+	line-height: 1.57;
+	letter-spacing: 0.7px;
+  text-align: center;
+  max-width: 365px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-header-stats {
+  font-size: 30px;
+	font-weight: bold;
+	line-height: 0.83;
+	color: #fff9b2;
+}
+
+.center {
+  text-align: center;
+}
+
+.featured-brand {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-header-stats small {
+  color: #ffffff;
+  font-size: 20px;
+	line-height: 1.25;
+	letter-spacing: 2.8px;
+	text-align: center;
+}
+
+.featured-brand-container {
+  height: 384px;
+  background-color: #167e47;
+}
+
+.home-featured-brands-title {
+  font-size: 24px;
+	font-weight: bold;
+	line-height: 1.17;
+  text-align: left;
+  color: #ffffff;
+}
+
+.home-featured-brands-title {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.homepage-geosuggest .geosuggest__item {
+  color: black;
+}
+
+.contained-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: darkgray;
+}
+
+.account-link {
+  cursor: pointer;
+  color: #1BE58D !important;
+  font-weight: 400;
+}
+
+#login-modal {
+  width: 350px;
+}

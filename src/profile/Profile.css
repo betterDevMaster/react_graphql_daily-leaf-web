@@ -1,0 +1,66 @@
+.profile-header {
+  height: 140px;
+  background-color: #167e47;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Montserrat-Black;
+	font-size: 36px;
+	color: #ffffff;
+}
+
+.profile-nav-card {
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.profile-nav-pills .nav-item .nav-link.active, .profile-nav-pills .nav-item .nav-link.active:focus, .profile-nav-pills .nav-item .nav-link.active:hover {
+  background-color: #F5F5F5;
+  box-shadow: none;
+	color: #356da4;
+}
+
+.profile-nav-pills .nav-item .nav-link {
+  background-color: #ffffff;
+}
+.profile-nav-pills .nav-item {
+  font-size: 14px;
+  font-family: Montserrat-Bold;
+	font-weight: bold;
+	line-height: 1.57;
+  letter-spacing: 0.7px;
+  color: #3c3d48;
+  background-color: #ffffff;
+  padding: 8px;
+}
+
+.profile-nav-section {
+  padding-top: 35px;
+}
+
+.profile-row-title {
+  font-family: Montserrat-Regular;
+	font-size: 24px;
+  line-height: 1.71;
+	text-align: left;
+  color: #3c3d48;
+  margin-top: 40px;
+}
+
+.profile-row-description {
+	font-size: 14px;
+	line-height: 1.71;
+	text-align: left;
+	color: #3c3d48;
+}
+
+.deal-row-footer {
+  position: relative;
+  bottom: 0;
+}
+
+.bootstrap-switch .bootstrap-switch-container {
+  width: 103px !important;
+}

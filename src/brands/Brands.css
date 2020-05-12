@@ -1,0 +1,128 @@
+.brand-card {
+  height: 350px;
+  box-shadow: none;
+  border: solid 1px #d5d5d5;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brand-view-card {
+  box-shadow: none;
+  padding: 30px;
+}
+
+.brand-view-card .card-body {
+  padding: 0;
+}
+
+
+.brand-desc-title {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #3c3d48;
+}
+
+.brand-desc {
+  font-size: 15px;
+  line-height: 1.73;
+	letter-spacing: 0.7px;
+	text-align: left;
+	color: #3c3d48;
+}
+.brand-product-image-container {
+  background-repeat: no-repeat;
+  box-shadow: none;
+  text-align: center;
+  padding: 10px;
+}
+.brand-product-image {
+  min-height: 300px;
+  object-fit: contain;
+}
+
+.brand-product-title {
+  margin-bottom: 10px;
+}
+.brand-product-description {
+	color: #3c3d48;
+}
+
+.brand-card-featured {
+  background-size: cover;
+}
+
+.brand-card:after, .brand-product-image:after, .featured-brand-card:after {
+  background: 0;
+}
+
+.brand-section {
+  padding-top: 20px;
+}
+
+.brand-view-section-title {
+  font-size: 24px;
+	font-weight: bold;
+	line-height: 1.17;
+	text-align: left;
+  color: #167e47;
+}
+
+.brand-view-section {
+  margin-top: 40px;
+}
+
+.brand-header {
+  min-height: 50vh;
+}
+
+.brand-header-logo {
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.brand-header-title {
+  font-size: 30px;
+	font-weight: 900;
+	line-height: 1.0;
+  letter-spacing: 1.5px;
+  margin-top: 23px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.brand-favorite-button {
+  font-size: 10px;
+	font-weight: bold;
+}
+
+.brand-favorite-icon {
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+.featured-brand-card {
+  height: 216px;
+  width: 216px;
+  box-shadow: none;
+  padding: 20px;
+}
+
+.featured-brand-card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.contained-brand-image {
+  padding: 20px;
+}
+
+.brand-view-card {
+  min-height: 400px;
+}
+
+.ql-snow a {
+  color: #2780E3 !important;
+}
